@@ -7,3 +7,7 @@ To run on your local environment perform the following steps:
 - Clone the repo
 - Run `npm install`
 - Run `npm start`
+
+### To Execute the sample Workflow
+- Send a post request to localhost:3000/message
+- The workflow will get executed

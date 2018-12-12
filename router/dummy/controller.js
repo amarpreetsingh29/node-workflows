@@ -5,7 +5,7 @@ class DummyController {
     ctx.response.body = {
       data: 'success'
     }
-    RouterMgr.onEcho(ctx.body)
+    RouterMgr.onEcho(ctx.request.body)
     next()
   }
 }

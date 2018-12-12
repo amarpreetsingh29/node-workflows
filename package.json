@@ -10,9 +10,11 @@
   "author": "Amarpreet Singh",
   "license": "ISC",
   "dependencies": {
+    "@koa/cors": "^2.2.2",
     "kafka-node": "^3.0.1",
     "kafka-streams": "^4.7.0",
     "koa": "^2.6.1",
+    "koa-bodyparser": "^4.2.1",
     "koa-router": "^7.4.0",
     "nodemon": "^1.18.7",
     "redis": "^2.8.0",

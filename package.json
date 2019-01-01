@@ -4,7 +4,7 @@
   "description": "Building pipelines in node.js",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --inspect index.js",
+    "start": "nodemon --inspect src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Amarpreet Singh",

@@ -86,10 +86,12 @@ class ConnectorManager {
   }
 }
 
+// expose errors on ConnectorManager
 ConnectorManager.prototype.MaxListenerExceededError = MaxListenerExceededError
 ConnectorManager.prototype.InvalidConnectorError = InvalidConnectorError
 ConnectorManager.prototype.InvalidArgumentsError = InvalidArgumentsError
 
+// custom errors
 function MaxListenerExceededError (connector, event) {
   this.connector = connector
   this.event = event
@@ -105,6 +107,8 @@ function InvalidArgumentsError (message) {
   this.message = `Failed to ${message} event due to invalid arguments passed`
   Error.captureStackTrace(this)
 }
+
+// set prototype of Custom Errors to Error class
 Object.setPrototypeOf(MaxListenerExceededError.prototype, Error.prototype)
 Object.setPrototypeOf(InvalidConnectorError.prototype, Error.prototype)
 Object.setPrototypeOf(InvalidArgumentsError.prototype, Error.prototype)
